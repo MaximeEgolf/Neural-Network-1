@@ -1,0 +1,10 @@
+﻿  Layer.cpp
+  Utils.cpp
+  main.cpp
+C:\Users\egom1401\OneDrive - USherbrooke\PROJET\NeuralNetwork\NeuralNetwork\main.cpp(9,15): warning C4244: 'argument' : conversion de 'time_t' en 'unsigned int', perte possible de données
+C:\Users\egom1401\OneDrive - USherbrooke\PROJET\NeuralNetwork\NeuralNetwork\main.cpp(13,17): warning C4305: '=' : troncation de 'double' à 'float'
+C:\Users\egom1401\OneDrive - USherbrooke\PROJET\NeuralNetwork\NeuralNetwork\main.cpp(14,17): warning C4305: '=' : troncation de 'double' à 'float'
+C:\Users\egom1401\OneDrive - USherbrooke\PROJET\NeuralNetwork\NeuralNetwork\main.cpp(15,17): warning C4305: '=' : troncation de 'double' à 'float'
+C:\Users\egom1401\OneDrive - USherbrooke\PROJET\NeuralNetwork\NeuralNetwork\main.cpp(16,17): warning C4305: '=' : troncation de 'double' à 'float'
+  Génération de code en cours...
+  NeuralNetwork.vcxproj -> C:\Users\egom1401\OneDrive - USherbrooke\PROJET\NeuralNetwork\x64\Debug\NeuralNetwork.exe
