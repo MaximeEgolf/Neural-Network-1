@@ -5,48 +5,66 @@ Layer::Layer(int nIn, int nOut) {
 	neuronsIn = nIn;
 	neuronsOut = nOut;
 
-	// Initialization (weights)
+	// Weights
 	weights = new float*[neuronsOut];
 	for (int i = 0; i < neuronsOut; i++) {
 		weights[i] = new float[neuronsIn];
 	}
 
-	// Initialization (bias)
+	// Biases
 	biases = new float[neuronsOut];
 
-	// Initial Values
+	// Outputs
+	outputs = new float[neuronsOut]();
+
+	// Initial
 	for (int i = 0; i < neuronsOut; i++) {
 		for (int j = 0; j < neuronsIn; j++) {
-			weights[i][j] = (float)(rand()) / (float)(RAND_MAX);
+			weights[i][j] = Utils::GenerateFraction(-1.0f, 1.0f);
 		}
 
-		biases[i] = (float)(rand()) / (float)(RAND_MAX);
+		biases[i] = Utils::GenerateFraction(-1.0f, 1.0f);
 	}
 }
 
 Layer::~Layer()
 {
-	// Destruction (weights)
+	// Weights
 	for (int i = 0; i < neuronsOut; i++) {
 		delete[] weights[i];
 	}
 	delete[] weights;
 
-	// Destruction (bias)
+	// Biases
 	delete[] biases;
+
+	// Outputs
+	delete[] outputs;
 }
 
-// Return: Each neuron has an output that depends on the input
+float Layer::ActivationReLU(float weightedInput) {
+	if (weightedInput > 0)
+		return weightedInput;
+	else
+		return 0;
+}
+
+float Layer::ActivationSigmoid(float weightedInput) {
+	return 1 / (1 + exp(-weightedInput));
+}
+
 float* Layer::CalculateOutputs(float* inputs)
 {
-	float* outputs = new float[neuronsOut]();
+	std::fill(outputs, outputs + neuronsOut, 0.0f);
 
 	for (int i = 0; i < neuronsOut; i++) {
+		outputs[i] += biases[i];
+
 		for (int j = 0; j < neuronsIn; j++) {
 			outputs[i] += inputs[j] * weights[i][j];
 		}
 
-		outputs[i] += biases[i];
+		outputs[i] = ActivationSigmoid(outputs[i]);
 	}
 
 	return outputs;
@@ -57,7 +75,12 @@ void Layer::PrintWeights()
 	Utils::Print2D(weights, neuronsOut, neuronsIn, "Weights");
 }
 
-void Layer::PrintBias()
+void Layer::PrintBiases()
 {
 	Utils::Print1D(biases, neuronsOut, "Biases");
+}
+
+void Layer::PrintOutputs()
+{
+	Utils::Print1D(outputs, neuronsOut, "Outputs");
 }

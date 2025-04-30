@@ -31,3 +31,8 @@ void Utils::Print2D(float** inputs2D, int boundsROW, int boundsCOL, std::string 
 	}
 	std::cout << "}" << std::endl;
 }
+
+float Utils::GenerateFraction(float minBounds, float maxBounds) {
+	float random = (float)rand() / RAND_MAX;
+	return (minBounds + random * (maxBounds - minBounds));
+}

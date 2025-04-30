@@ -2,6 +2,7 @@
 
 #include "Layer.h"
 #include "Utils.h"
+#include "Network.h"
 
 int main()
 {
@@ -10,17 +11,12 @@ int main()
 
     // Initialisation
     float* inputs = new float[4];
-    inputs[0] = 0.12;
-    inputs[1] = -0.51;
-    inputs[2] = 0.37;
-    inputs[3] = -0.20;
+    inputs[0] = 0.12f;
+    inputs[1] = -0.51f;
+    inputs[2] = 0.37f;
+    inputs[3] = -0.20f;
 
-    Utils::Print1D(inputs, 4, "Inputs");
-
-    Layer layer1 = Layer(4, 2);
-    layer1.PrintWeights();
-    layer1.PrintBias();
-    float* outputs = layer1.CalculateOutputs(inputs);
-
-    Utils::Print1D(outputs, 2, "Outputs");
+    Network network = Network({ 4,2,3,4 });
+    float* output = network.CalculateOutputs(inputs);
+    network.PrintNetwork();
 }

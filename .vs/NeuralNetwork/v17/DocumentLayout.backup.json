@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\egom1401\\OneDrive - USherbrooke\\PROJET\\NeuralNetwork\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{656C5C3C-CB44-421F-97B0-78885F12C75E}|NeuralNetwork\\NeuralNetwork.vcxproj|C:\\Users\\egom1401\\OneDrive - USherbrooke\\PROJET\\NeuralNetwork\\NeuralNetwork\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{656C5C3C-CB44-421F-97B0-78885F12C75E}|NeuralNetwork\\NeuralNetwork.vcxproj|solutionrelative:NeuralNetwork\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{656C5C3C-CB44-421F-97B0-78885F12C75E}|NeuralNetwork\\NeuralNetwork.vcxproj|C:\\Users\\egom1401\\OneDrive - USherbrooke\\PROJET\\NeuralNetwork\\NeuralNetwork\\Layer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{656C5C3C-CB44-421F-97B0-78885F12C75E}|NeuralNetwork\\NeuralNetwork.vcxproj|solutionrelative:NeuralNetwork\\Layer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{656C5C3C-CB44-421F-97B0-78885F12C75E}|NeuralNetwork\\NeuralNetwork.vcxproj|C:\\Users\\egom1401\\OneDrive - USherbrooke\\PROJET\\NeuralNetwork\\NeuralNetwork\\Network.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{656C5C3C-CB44-421F-97B0-78885F12C75E}|NeuralNetwork\\NeuralNetwork.vcxproj|solutionrelative:NeuralNetwork\\Network.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{656C5C3C-CB44-421F-97B0-78885F12C75E}|NeuralNetwork\\NeuralNetwork.vcxproj|C:\\Users\\egom1401\\OneDrive - USherbrooke\\PROJET\\NeuralNetwork\\NeuralNetwork\\Network.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{656C5C3C-CB44-421F-97B0-78885F12C75E}|NeuralNetwork\\NeuralNetwork.vcxproj|solutionrelative:NeuralNetwork\\Network.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{656C5C3C-CB44-421F-97B0-78885F12C75E}|NeuralNetwork\\NeuralNetwork.vcxproj|C:\\Users\\egom1401\\OneDrive - USherbrooke\\PROJET\\NeuralNetwork\\NeuralNetwork\\Layer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{656C5C3C-CB44-421F-97B0-78885F12C75E}|NeuralNetwork\\NeuralNetwork.vcxproj|solutionrelative:NeuralNetwork\\Layer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{656C5C3C-CB44-421F-97B0-78885F12C75E}|NeuralNetwork\\NeuralNetwork.vcxproj|C:\\Users\\egom1401\\OneDrive - USherbrooke\\PROJET\\NeuralNetwork\\NeuralNetwork\\Utils.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{656C5C3C-CB44-421F-97B0-78885F12C75E}|NeuralNetwork\\NeuralNetwork.vcxproj|solutionrelative:NeuralNetwork\\Utils.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{656C5C3C-CB44-421F-97B0-78885F12C75E}|NeuralNetwork\\NeuralNetwork.vcxproj|C:\\Users\\egom1401\\OneDrive - USherbrooke\\PROJET\\NeuralNetwork\\NeuralNetwork\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{656C5C3C-CB44-421F-97B0-78885F12C75E}|NeuralNetwork\\NeuralNetwork.vcxproj|solutionrelative:NeuralNetwork\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{656C5C3C-CB44-421F-97B0-78885F12C75E}|NeuralNetwork\\NeuralNetwork.vcxproj|C:\\Users\\egom1401\\OneDrive - USherbrooke\\PROJET\\NeuralNetwork\\NeuralNetwork\\Utils.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{656C5C3C-CB44-421F-97B0-78885F12C75E}|NeuralNetwork\\NeuralNetwork.vcxproj|solutionrelative:NeuralNetwork\\Utils.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{656C5C3C-CB44-421F-97B0-78885F12C75E}|NeuralNetwork\\NeuralNetwork.vcxproj|C:\\Users\\egom1401\\OneDrive - USherbrooke\\PROJET\\NeuralNetwork\\NeuralNetwork\\Utils.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{656C5C3C-CB44-421F-97B0-78885F12C75E}|NeuralNetwork\\NeuralNetwork.vcxproj|solutionrelative:NeuralNetwork\\Utils.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,69 +38,95 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Layer.h",
-              "DocumentMoniker": "C:\\Users\\egom1401\\OneDrive - USherbrooke\\PROJET\\NeuralNetwork\\NeuralNetwork\\Layer.h",
-              "RelativeDocumentMoniker": "NeuralNetwork\\Layer.h",
-              "ToolTip": "C:\\Users\\egom1401\\OneDrive - USherbrooke\\PROJET\\NeuralNetwork\\NeuralNetwork\\Layer.h",
-              "RelativeToolTip": "NeuralNetwork\\Layer.h",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-29T15:36:03.585Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Utils.cpp",
               "DocumentMoniker": "C:\\Users\\egom1401\\OneDrive - USherbrooke\\PROJET\\NeuralNetwork\\NeuralNetwork\\Utils.cpp",
               "RelativeDocumentMoniker": "NeuralNetwork\\Utils.cpp",
               "ToolTip": "C:\\Users\\egom1401\\OneDrive - USherbrooke\\PROJET\\NeuralNetwork\\NeuralNetwork\\Utils.cpp",
               "RelativeToolTip": "NeuralNetwork\\Utils.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-29T18:01:27.205Z",
+              "WhenOpened": "2025-04-30T00:36:00.989Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Utils.h",
               "DocumentMoniker": "C:\\Users\\egom1401\\OneDrive - USherbrooke\\PROJET\\NeuralNetwork\\NeuralNetwork\\Utils.h",
               "RelativeDocumentMoniker": "NeuralNetwork\\Utils.h",
               "ToolTip": "C:\\Users\\egom1401\\OneDrive - USherbrooke\\PROJET\\NeuralNetwork\\NeuralNetwork\\Utils.h",
               "RelativeToolTip": "NeuralNetwork\\Utils.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-29T18:00:19.741Z",
+              "WhenOpened": "2025-04-30T00:35:17.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Layer.h",
+              "DocumentMoniker": "C:\\Users\\egom1401\\OneDrive - USherbrooke\\PROJET\\NeuralNetwork\\NeuralNetwork\\Layer.h",
+              "RelativeDocumentMoniker": "NeuralNetwork\\Layer.h",
+              "ToolTip": "C:\\Users\\egom1401\\OneDrive - USherbrooke\\PROJET\\NeuralNetwork\\NeuralNetwork\\Layer.h",
+              "RelativeToolTip": "NeuralNetwork\\Layer.h",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAkwA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-29T23:16:36.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Network.h",
+              "DocumentMoniker": "C:\\Users\\egom1401\\OneDrive - USherbrooke\\PROJET\\NeuralNetwork\\NeuralNetwork\\Network.h",
+              "RelativeDocumentMoniker": "NeuralNetwork\\Network.h",
+              "ToolTip": "C:\\Users\\egom1401\\OneDrive - USherbrooke\\PROJET\\NeuralNetwork\\NeuralNetwork\\Network.h",
+              "RelativeToolTip": "NeuralNetwork\\Network.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-29T23:08:11.515Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Network.cpp",
+              "DocumentMoniker": "C:\\Users\\egom1401\\OneDrive - USherbrooke\\PROJET\\NeuralNetwork\\NeuralNetwork\\Network.cpp",
+              "RelativeDocumentMoniker": "NeuralNetwork\\Network.cpp",
+              "ToolTip": "C:\\Users\\egom1401\\OneDrive - USherbrooke\\PROJET\\NeuralNetwork\\NeuralNetwork\\Network.cpp",
+              "RelativeToolTip": "NeuralNetwork\\Network.cpp",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-29T23:07:04.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Layer.cpp",
               "DocumentMoniker": "C:\\Users\\egom1401\\OneDrive - USherbrooke\\PROJET\\NeuralNetwork\\NeuralNetwork\\Layer.cpp",
               "RelativeDocumentMoniker": "NeuralNetwork\\Layer.cpp",
               "ToolTip": "C:\\Users\\egom1401\\OneDrive - USherbrooke\\PROJET\\NeuralNetwork\\NeuralNetwork\\Layer.cpp",
               "RelativeToolTip": "NeuralNetwork\\Layer.cpp",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAkwDsAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAD4vzsAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-29T15:38:17.936Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\egom1401\\OneDrive - USherbrooke\\PROJET\\NeuralNetwork\\NeuralNetwork\\main.cpp",
               "RelativeDocumentMoniker": "NeuralNetwork\\main.cpp",
               "ToolTip": "C:\\Users\\egom1401\\OneDrive - USherbrooke\\PROJET\\NeuralNetwork\\NeuralNetwork\\main.cpp",
               "RelativeToolTip": "NeuralNetwork\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-29T15:33:43.26Z",
               "EditorCaption": ""
