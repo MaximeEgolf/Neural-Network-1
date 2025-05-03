@@ -17,6 +17,7 @@ public:
 	float ActivationReLU(float weightedInput);
 	float ActivationSigmoid(float weightedInput);
 	float* CalculateOutputs(float* inputs);
+	float CalculateLoss(float* expectedOutputs);
 	void PrintWeights();
 	void PrintBiases();
 	void PrintOutputs();

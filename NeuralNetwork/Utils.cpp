@@ -32,6 +32,17 @@ void Utils::Print2D(float** inputs2D, int boundsROW, int boundsCOL, std::string 
 	std::cout << "}" << std::endl;
 }
 
+void Utils::PrintMNISTImage(unsigned char* mnistImage, int imageSize, int boundsROW)
+{
+	for (int i = 0; i < imageSize; i++) {
+		if (i != 0 && i % boundsROW == 0)
+			std::cout << std::endl;
+
+		std::cout << (mnistImage[i] > 128 ? "#" : " ");
+	}
+	std::cout << std::endl;
+}
+
 float Utils::GenerateFraction(float minBounds, float maxBounds) {
 	float random = (float)rand() / RAND_MAX;
 	return (minBounds + random * (maxBounds - minBounds));

@@ -1,7 +1,8 @@
 ﻿  Layer.cpp
   Network.cpp
 C:\Users\egom1401\OneDrive - USherbrooke\PROJET\NeuralNetwork\NeuralNetwork\Network.cpp(5,32): warning C4267: '=' : conversion de 'size_t' en 'int', perte possible de données
+  Utils.cpp
   main.cpp
-C:\Users\egom1401\OneDrive - USherbrooke\PROJET\NeuralNetwork\NeuralNetwork\main.cpp(10,15): warning C4244: 'argument' : conversion de 'time_t' en 'unsigned int', perte possible de données
+C:\Users\egom1401\OneDrive - USherbrooke\PROJET\NeuralNetwork\NeuralNetwork\main.cpp(98,15): warning C4244: 'argument' : conversion de 'time_t' en 'unsigned int', perte possible de données
   Génération de code en cours...
   NeuralNetwork.vcxproj -> C:\Users\egom1401\OneDrive - USherbrooke\PROJET\NeuralNetwork\x64\Debug\NeuralNetwork.exe

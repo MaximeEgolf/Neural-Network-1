@@ -13,6 +13,9 @@ Network::Network(std::initializer_list<int> nodes) {
 
 		layers[i] = new Layer(inputSize, outputSize);
 	}
+
+	loss = 0;
+	output = nullptr;
 }
 
 Network::~Network(){
@@ -24,13 +27,20 @@ Network::~Network(){
 	delete[] layers;
 }
 
-float* Network::CalculateOutputs(float* inputs) {
+float Network::CalculateLoss(float* expectedOutputs) {
+	// Loss is only the last layer
+	Layer* outputLayer = layers[numberOfLayers];
+	return outputLayer->CalculateLoss(expectedOutputs);
+}
+
+void Network::CalculateOutputs(float* inputs) {
 	for (int i = 0; i < numberOfLayers; i++) {
 		inputs = layers[i]->CalculateOutputs(inputs);
 	}
 
-	return inputs;
+	output = inputs;
 }
+
 
 void Network::PrintNetwork() {
 	for (int i = 0; i < numberOfLayers; i++) {

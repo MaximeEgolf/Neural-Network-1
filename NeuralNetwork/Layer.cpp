@@ -55,10 +55,8 @@ float Layer::ActivationSigmoid(float weightedInput) {
 
 float* Layer::CalculateOutputs(float* inputs)
 {
-	std::fill(outputs, outputs + neuronsOut, 0.0f);
-
 	for (int i = 0; i < neuronsOut; i++) {
-		outputs[i] += biases[i];
+		outputs[i] = biases[i];
 
 		for (int j = 0; j < neuronsIn; j++) {
 			outputs[i] += inputs[j] * weights[i][j];
@@ -68,6 +66,21 @@ float* Layer::CalculateOutputs(float* inputs)
 	}
 
 	return outputs;
+}
+
+float Layer::CalculateLoss(float* expectedOutputs)
+{
+	if (outputs == nullptr)
+		return 0.0f;
+
+	float totalLoss = 0;
+
+	for (int i = 0; i < neuronsOut; i++) {
+		float nodeLoss = outputs[i] - expectedOutputs[i];
+		totalLoss += nodeLoss * nodeLoss;
+	}
+
+	return totalLoss;
 }
 
 void Layer::PrintWeights()
