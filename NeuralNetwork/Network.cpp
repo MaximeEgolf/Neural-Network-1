@@ -27,10 +27,10 @@ Network::~Network(){
 	delete[] layers;
 }
 
-float Network::CalculateLoss(float* expectedOutputs) {
+void Network::CalculateLoss(float* expectedOutputs) {
 	// Loss is only the last layer
-	Layer* outputLayer = layers[numberOfLayers];
-	return outputLayer->CalculateLoss(expectedOutputs);
+	Layer* outputLayer = layers[numberOfLayers - 1];
+	loss = outputLayer->CalculateLoss(expectedOutputs);
 }
 
 void Network::CalculateOutputs(float* inputs) {
@@ -42,12 +42,21 @@ void Network::CalculateOutputs(float* inputs) {
 }
 
 
-void Network::PrintNetwork() {
+void Network::PrintNetwork(bool pWeights, bool pBias, bool pOutputs, bool pLoss) {
+	std::cout << "---\t" << "Neural Network " << "\t---" << std::endl;
 	for (int i = 0; i < numberOfLayers; i++) {
-		std::cout << "----------" << "LAYER " << i << "----------" << std::endl;
-		layers[i]->PrintWeights();
-		layers[i]->PrintBiases();
-		layers[i]->PrintOutputs();
-		std::cout << "------" << "END OF LAYER " << i << "------" << std::endl;
+		std::cout << "---\t" << "Layer " << i << "\t---" << std::endl;
+		if (pWeights == true)
+			layers[i]->PrintWeights();
+		if (pBias == true)
+			layers[i]->PrintBiases();
+		if (pOutputs == true)
+			layers[i]->PrintOutputs();
+		std::cout << std::endl;
 	}
+
+	if (pLoss == true)
+		std::cout << "Loss : " << loss << std::endl;
+
+	std::cout << std::endl;
 }

@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{656C5C3C-CB44-421F-97B0-78885F12C75E}|NeuralNetwork\\NeuralNetwork.vcxproj|solutionrelative:NeuralNetwork\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{656C5C3C-CB44-421F-97B0-78885F12C75E}|NeuralNetwork\\NeuralNetwork.vcxproj|C:\\Users\\egom1401\\OneDrive - USherbrooke\\PROJET\\NeuralNetwork\\NeuralNetwork\\Network.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{656C5C3C-CB44-421F-97B0-78885F12C75E}|NeuralNetwork\\NeuralNetwork.vcxproj|solutionrelative:NeuralNetwork\\Network.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{656C5C3C-CB44-421F-97B0-78885F12C75E}|NeuralNetwork\\NeuralNetwork.vcxproj|C:\\Users\\egom1401\\OneDrive - USherbrooke\\PROJET\\NeuralNetwork\\NeuralNetwork\\Network.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{656C5C3C-CB44-421F-97B0-78885F12C75E}|NeuralNetwork\\NeuralNetwork.vcxproj|solutionrelative:NeuralNetwork\\Network.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{656C5C3C-CB44-421F-97B0-78885F12C75E}|NeuralNetwork\\NeuralNetwork.vcxproj|C:\\Users\\egom1401\\OneDrive - USherbrooke\\PROJET\\NeuralNetwork\\NeuralNetwork\\Network.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{656C5C3C-CB44-421F-97B0-78885F12C75E}|NeuralNetwork\\NeuralNetwork.vcxproj|solutionrelative:NeuralNetwork\\Network.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{656C5C3C-CB44-421F-97B0-78885F12C75E}|NeuralNetwork\\NeuralNetwork.vcxproj|C:\\Users\\egom1401\\OneDrive - USherbrooke\\PROJET\\NeuralNetwork\\NeuralNetwork\\Layer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -38,13 +38,26 @@
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Network.h",
+              "DocumentMoniker": "C:\\Users\\egom1401\\OneDrive - USherbrooke\\PROJET\\NeuralNetwork\\NeuralNetwork\\Network.h",
+              "RelativeDocumentMoniker": "NeuralNetwork\\Network.h",
+              "ToolTip": "C:\\Users\\egom1401\\OneDrive - USherbrooke\\PROJET\\NeuralNetwork\\NeuralNetwork\\Network.h",
+              "RelativeToolTip": "NeuralNetwork\\Network.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-03T21:58:45.851Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Utils.h",
               "DocumentMoniker": "C:\\Users\\egom1401\\OneDrive - USherbrooke\\PROJET\\NeuralNetwork\\NeuralNetwork\\Utils.h",
               "RelativeDocumentMoniker": "NeuralNetwork\\Utils.h",
               "ToolTip": "C:\\Users\\egom1401\\OneDrive - USherbrooke\\PROJET\\NeuralNetwork\\NeuralNetwork\\Utils.h",
               "RelativeToolTip": "NeuralNetwork\\Utils.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-30T00:35:17.919Z",
               "EditorCaption": ""
@@ -65,25 +78,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Network.h",
-              "DocumentMoniker": "C:\\Users\\egom1401\\OneDrive - USherbrooke\\PROJET\\NeuralNetwork\\NeuralNetwork\\Network.h",
-              "RelativeDocumentMoniker": "NeuralNetwork\\Network.h",
-              "ToolTip": "C:\\Users\\egom1401\\OneDrive - USherbrooke\\PROJET\\NeuralNetwork\\NeuralNetwork\\Network.h",
-              "RelativeToolTip": "NeuralNetwork\\Network.h",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-29T23:08:11.515Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Network.cpp",
               "DocumentMoniker": "C:\\Users\\egom1401\\OneDrive - USherbrooke\\PROJET\\NeuralNetwork\\NeuralNetwork\\Network.cpp",
               "RelativeDocumentMoniker": "NeuralNetwork\\Network.cpp",
               "ToolTip": "C:\\Users\\egom1401\\OneDrive - USherbrooke\\PROJET\\NeuralNetwork\\NeuralNetwork\\Network.cpp",
               "RelativeToolTip": "NeuralNetwork\\Network.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAkwCAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-29T23:07:04.43Z",
               "EditorCaption": ""
@@ -96,7 +96,7 @@
               "RelativeDocumentMoniker": "NeuralNetwork\\main.cpp",
               "ToolTip": "C:\\Users\\egom1401\\OneDrive - USherbrooke\\PROJET\\NeuralNetwork\\NeuralNetwork\\main.cpp",
               "RelativeToolTip": "NeuralNetwork\\main.cpp",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAAAHUAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAAAHwAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-29T15:33:43.26Z",
               "EditorCaption": ""
@@ -109,7 +109,7 @@
               "RelativeDocumentMoniker": "NeuralNetwork\\Utils.cpp",
               "ToolTip": "C:\\Users\\egom1401\\OneDrive - USherbrooke\\PROJET\\NeuralNetwork\\NeuralNetwork\\Utils.cpp",
               "RelativeToolTip": "NeuralNetwork\\Utils.cpp",
-              "ViewState": "AgIAABQAAAAAAAAAAAAkwB0AAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-30T00:36:00.989Z",
               "EditorCaption": ""

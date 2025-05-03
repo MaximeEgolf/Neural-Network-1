@@ -5,7 +5,9 @@
 #include "Utils.h"
 #include "Network.h"
 
-unsigned char** ReadMNISTImages(std::string fullPath, int& numberOfImages, int& imageSize) {
+constexpr int OUTPUTS = 10;
+
+static float** ReadMNISTImages(std::string fullPath, int& numberOfImages, int& nCols, int& nRows) {
 
     auto reverseInt = [](int i) {
         unsigned char c1, c2, c3, c4;
@@ -16,7 +18,7 @@ unsigned char** ReadMNISTImages(std::string fullPath, int& numberOfImages, int& 
     std::ifstream file(fullPath, std::ios::binary);
 
     if (file.is_open()) {
-        int magicNumber = 0, nRows = 0, nCols = 0;
+        int magicNumber = 0;
 
         // Magic Number
         file.read((char*)&magicNumber, sizeof(magicNumber));
@@ -37,22 +39,30 @@ unsigned char** ReadMNISTImages(std::string fullPath, int& numberOfImages, int& 
         file.read((char*)&nCols, sizeof(nCols));
         nCols = reverseInt(nCols);
 
-        imageSize = nRows * nCols;
+        int imageSize = nRows * nCols;
 
-        unsigned char** _dataset = new unsigned char* [numberOfImages];
+        float** dataset = new float*[numberOfImages];
+        unsigned char* buffer = new unsigned char[imageSize];
+
         for (int i = 0; i < numberOfImages; i++) {
-            _dataset[i] = new unsigned char[imageSize];
-            file.read((char*)_dataset[i], imageSize);
+            file.read((char*)buffer, imageSize);
+            dataset[i] = new float[imageSize];
+
+            for (int j = 0; j < imageSize; j++) {
+                dataset[i][j] = buffer[j] / 255.0f;
+            }
         }
 
-        return _dataset;
+        delete[] buffer;
+
+        return dataset;
     }
     else {
         throw std::runtime_error("Cannot open file `" + fullPath + "`!");
     }
 }
 
-unsigned char* ReadMNISTLabels(std::string fullPath, int& numberOfLabels) {
+static float** ReadMNISTLabels(std::string fullPath, int& numberOfLabels) {
     auto reverseInt = [](int i) {
         unsigned char c1, c2, c3, c4;
         c1 = i & 255, c2 = (i >> 8) & 255, c3 = (i >> 16) & 255, c4 = (i >> 24) & 255;
@@ -62,35 +72,37 @@ unsigned char* ReadMNISTLabels(std::string fullPath, int& numberOfLabels) {
     std::ifstream file(fullPath, std::ios::binary);
 
     if (file.is_open()) {
-        int magic_number = 0;
-        file.read((char*)&magic_number, sizeof(magic_number));
-        magic_number = reverseInt(magic_number);
+        int magicNumber = 0;
+        file.read((char*)&magicNumber, sizeof(magicNumber));
+        magicNumber = reverseInt(magicNumber);
 
-        if (magic_number != 2049) 
+        if (magicNumber != 2049) 
             throw std::runtime_error("Invalid MNIST label file!");
 
         file.read((char*)&numberOfLabels, sizeof(numberOfLabels)), numberOfLabels = reverseInt(numberOfLabels);
 
-        unsigned char* _dataset = new unsigned char[numberOfLabels];
+        float** dataset = new float*[numberOfLabels];
+        unsigned char buffer;
+
         for (int i = 0; i < numberOfLabels; i++) {
-            file.read((char*)&_dataset[i], 1);
+            file.read((char*)&buffer, 1);
+            
+            // One hot encoding
+            dataset[i] = new float[OUTPUTS]();
+            dataset[i][buffer] = 1.0f;
         }
-        return _dataset;
+        return dataset;
     }
     else {
         throw std::runtime_error("Unable to open file `" + fullPath + "`!");
     }
 }
 
-void FreeMNIST(unsigned char* labels, unsigned char** images, int numberOfImages) {
-    // Labels
-    delete[] labels;
-    
-    // Images
-    for (int i = 0; i < numberOfImages; ++i) {
-        delete[] images[i];
+static void FreeMNIST(float** elements, int numberOfElements) {
+    for (int i = 0; i < numberOfElements; ++i) {
+        delete[] elements[i];
     }
-    delete[] images;
+    delete[] elements;
 }
 
 int main() {
@@ -98,21 +110,23 @@ int main() {
     srand(time(NULL));
 
     // MNIST (allocate)
-    int imageSize, numberOfImages, numberOfLabels;
-    unsigned char** images = ReadMNISTImages("../MNIST/training/train-images.idx3-ubyte", numberOfImages, imageSize);
-    unsigned char* labels = ReadMNISTLabels("../MNIST/training/train-labels.idx1-ubyte", numberOfLabels);
+    int nColsImage, nRowsImage, numberOfImages, numberOfLabels;
+
+    float** images = ReadMNISTImages("../MNIST/training/train-images.idx3-ubyte", numberOfImages, nColsImage, nRowsImage);
+    float** labels = ReadMNISTLabels("../MNIST/training/train-labels.idx1-ubyte", numberOfLabels);
+
+    // Neural Network
+    Network network = Network({ nColsImage * nRowsImage, 5, OUTPUTS });
 
     for (int i = 0; i < 10; i++) {
-        Utils::PrintMNISTImage(images[i], imageSize, 28);
-        std::cout << "--- \t Label = " << (int)labels[i] << "\t ---" << std::endl;
+        Utils::PrintMNISTImage(images[i], nColsImage * nRowsImage, nColsImage);
+        Utils::Print1D(labels[i], OUTPUTS, "Label");
+        network.CalculateOutputs(images[i]);
+        network.CalculateLoss(labels[i]);
+        network.PrintNetwork(false, false, true, true);
     }
-    // Neural Network
-    /*
-    Network network = Network({ 4,2,3,4 });
-    network.CalculateOutputs(inputs);
-    network.PrintNetwork();
-    */
 
     // MNIST (free)
-    FreeMNIST(labels, images, numberOfImages);
+    FreeMNIST(images, numberOfImages);
+    FreeMNIST(labels, numberOfLabels);
 }

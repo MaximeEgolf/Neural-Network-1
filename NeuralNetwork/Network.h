@@ -12,8 +12,11 @@ private:
 public:
 	Network(std::initializer_list<int> nums);
 	~Network();
-	float CalculateLoss(float* expectedOutputs);
+	void CalculateLoss(float* expectedOutputs);
 	void CalculateOutputs(float* inputs);
-	void PrintNetwork();
+	void PrintNetwork(bool pWeights = true, 
+					  bool pBias = true, 
+					  bool pOutputs = true, 
+					  bool pLoss = true);
 };
 

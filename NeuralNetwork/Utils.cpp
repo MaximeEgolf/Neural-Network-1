@@ -3,7 +3,7 @@
 void Utils::Print1D(float* inputs1D, int bounds, std::string message)
 {
 	// Header
-	std::cout << "- \t" << message << "\t -" << std::endl;
+	std::cout << "---\t" << message << "\t---" << std::endl;
 
 	// Print
 	std::cout << "{";
@@ -17,7 +17,7 @@ void Utils::Print1D(float* inputs1D, int bounds, std::string message)
 void Utils::Print2D(float** inputs2D, int boundsROW, int boundsCOL, std::string message)
 {
 	// Header
-	std::cout << "- \t" << message << "\t -" << std::endl;
+	std::cout << "---\t" << message << "\t---" << std::endl;
 
 	// Print
 	std::cout << "{" << std::endl;
@@ -32,13 +32,13 @@ void Utils::Print2D(float** inputs2D, int boundsROW, int boundsCOL, std::string 
 	std::cout << "}" << std::endl;
 }
 
-void Utils::PrintMNISTImage(unsigned char* mnistImage, int imageSize, int boundsROW)
+void Utils::PrintMNISTImage(float* mnistImage, int imageSize, int boundsROW)
 {
 	for (int i = 0; i < imageSize; i++) {
 		if (i != 0 && i % boundsROW == 0)
 			std::cout << std::endl;
 
-		std::cout << (mnistImage[i] > 128 ? "#" : " ");
+		std::cout << (mnistImage[i] > 0.50f ? "#" : " ");
 	}
 	std::cout << std::endl;
 }
