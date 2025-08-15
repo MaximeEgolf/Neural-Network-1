@@ -14,19 +14,19 @@ There is no external installation necessary for this project other than C++. I'm
 ## Usage
 Data
 ```
-
+To do
 ```
 Layer
 ```
-
+To do
 ```
 Network
 ```
-
+To do
 ```
 Utils
 ```
-
+To do
 ```
 ## Contributing
 
