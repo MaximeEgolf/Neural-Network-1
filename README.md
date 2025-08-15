@@ -1,12 +1,33 @@
 # Neural-Network
-It's a projet made for myself for an initiation inside of the world that are the neural-networks. This projet is made exclusively in C++.
+It's a projet made for myself as an initiation inside of the world of neural-networks. This projet is made exclusively in C++ and is strongly inspired by the video of Sebastian Lague
+
+[How to Create a Neural Network (and Train it to Identify Doodles) - Sebastian Lague](https://www.youtube.com/watch?v=hfMk-kjRv4c)
 
 ## Installation
-There is no installation necessary for this project. 
-
+There is no external installation necessary for this project other than C++. I'm using Visual Studio 2022 as the IDE, but you can choose whichever you prefere.
+```
+1) Open NeuralNetwork.sln
+2) Run the neural network
+3) Sketch a doodle
+4) Observe the neural network prediction
+```
 ## Usage
-(en cours)
+Data
+```
 
+```
+Layer
+```
+
+```
+Network
+```
+
+```
+Utils
+```
+
+```
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first
